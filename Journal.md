@@ -1,4 +1,3 @@
-# Journal
-## Phase 2
+## Phase 3
 
-I noticed that VehicleReport controls the order of the steps for both the truck and bike. The subclasses only handle their own formatting. I think inheritance made this easier because I didn't have to rewrite the same methods for both vehicles. The only tricky part was understanding how the parent class calls the methods from the subclasses.
+From what I understand, the boolean hook gives subclasses the choice to run an extra step without making it required. An abstract method has to be implemented, but the hook already has a default behavior. In this case, TruckReport returns true so it runs the maintenance check, while BikeReport uses false and skips it.

@@ -4,6 +4,11 @@ public abstract class VehicleReport {
     public final void generateReport() {
         collectData();
         formatReport();
+
+        if (shouldCheckMaintenance()) {
+            performMaintenanceCheck();
+        }
+
         logStatus();
     }
 
@@ -12,6 +17,14 @@ public abstract class VehicleReport {
     }
 
     protected abstract void formatReport();
+
+    protected boolean shouldCheckMaintenance() {
+        return false;
+    }
+
+    protected void performMaintenanceCheck() {
+        System.out.println("Performing maintenance check...");
+    }
 
     protected void logStatus() {
         System.out.println("Report logged to server.");
