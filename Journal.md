@@ -1,3 +1,3 @@
-## Phase 3
+## Phase 4
 
-From what I understand, the boolean hook gives subclasses the choice to run an extra step without making it required. An abstract method has to be implemented, but the hook already has a default behavior. In this case, TruckReport returns true so it runs the maintenance check, while BikeReport uses false and skips it.
+After running the program, I checked that both reports followed the correct order. The truck included the maintenance check while the bike skipped it. One thing I had to understand was how the parent class controls the steps while the subclasses handle their own formatting. After checking the output, the process made more sense to me.
