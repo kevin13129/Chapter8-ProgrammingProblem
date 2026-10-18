@@ -1,4 +1,4 @@
 # Journal
-## Phase 1
+## Phase 2
 
-In this phase I created the VehicleReport class to keep the report steps in one place. From what I understand, the Hollywood Principle means the main template controls when the other methods run instead of each subclass deciding the order. This helps keep the process consistent while still allowing different report formats.
+I noticed that VehicleReport controls the order of the steps for both the truck and bike. The subclasses only handle their own formatting. I think inheritance made this easier because I didn't have to rewrite the same methods for both vehicles. The only tricky part was understanding how the parent class calls the methods from the subclasses.

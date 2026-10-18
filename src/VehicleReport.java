@@ -17,5 +17,3 @@ public abstract class VehicleReport {
         System.out.println("Report logged to server.");
     }
 }
-class VehicleReport {
-}
